@@ -1,0 +1,9 @@
+from sklearn.linear_model import LinearRegression
+X= [[i] for i in map(int,input().split())]
+print(X)
+y = [500,750,1000,1250,1500,1750]
+print(y)
+model = LinearRegression()
+model.fit(X,y)
+n=float(input())
+print(model.predict([[n]]))
